@@ -2,8 +2,8 @@ import React from 'react';
 import './reset.css';
 import './ui/ui.css';
 import './App.css';
-import axios from 'axios';
-import PanelLeft from './component/panelLeft/panelLeft';
+// import axios from 'axios';
+import Login from './component/login/login';
 
 // const api = axios.create({
 //   baseURL: '#',
@@ -14,7 +14,7 @@ import PanelLeft from './component/panelLeft/panelLeft';
 function App(props) {
   return (
     <div className="App">
-      <PanelLeft></PanelLeft>
+      <Login></Login>
     </div>
   );
 }
