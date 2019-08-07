@@ -1,7 +1,14 @@
 import React from 'react';
+import './error.css';
+import Header from '../header/header';
 
-export default class Error extends React.Component{
-    render() {
-        
-    };
+export default function Error() {
+    return (
+        <section className='erro'>
+            <Header></Header>
+            <div className='container'>
+                
+            </div>
+        </section>
+    )
 }
