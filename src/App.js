@@ -15,7 +15,7 @@ import Error from './component/error/error';
 function App(props) {
   return (
     <div className="App">
-      <Error></Error>
+      <Header></Header>
     </div>
   );
 }
