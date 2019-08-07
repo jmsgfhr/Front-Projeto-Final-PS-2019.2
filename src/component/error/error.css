@@ -1,5 +1,37 @@
-.erro{
+.erro {
     width: 100%;
     height: 100vh;
     background-color: var(--primary-blue);
+}
+
+.header {
+    background-color: var(--primary-blue);
+}
+
+.erroContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.errorNumber {
+    font-family: var(--primary-font);
+    font-size: 3em;
+    color: var(--font-color-white);
+}
+
+.errorImg{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    object-fit: cover;
+}
+
+.errorMessage{
+    font-family: var(--primary-font);
+    font-size: 2em;
+    color: var(--font-color-white);
 }

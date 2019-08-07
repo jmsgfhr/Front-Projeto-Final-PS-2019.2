@@ -6,7 +6,7 @@ export default function Header() {
         <header className='header'>
             <div className='container'>
                 <div className='headerContent'>
-                    <img className='logoImg' src={require('../../assets/img/logo.svg')} alt='logo' />
+                    <img className='logoImg' src={require('../../assets/img/logo.svg')} alt='logo'></img>
                 </div>
             </div>
         </header>
