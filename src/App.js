@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import './reset.css';
+import './ui/ui.css';
 import './App.css';
+import Header from './component/header/header';
+import axios from 'axios';
+import Error from './component/error/error';
 
-function App() {
+// const api = axios.create({
+//   baseURL: '#',
+// });
+
+// export default api;
+
+function App(props) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Error></Error>
     </div>
   );
 }

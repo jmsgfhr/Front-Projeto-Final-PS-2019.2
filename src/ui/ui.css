@@ -1,0 +1,16 @@
+:root {
+    --primary-blue: #285670;
+    --secundary-blue: #2F6D89;
+    --primary-black: #333333;
+    --secundary-black: #474747;
+    --primary-grey: #5E6061;
+    --secundary-grey: #A8ACAD;
+    --font-color-white: #fafafa;
+    --primary-font: 'Nunito', sans-serif;
+}
+.container{
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+}
+
