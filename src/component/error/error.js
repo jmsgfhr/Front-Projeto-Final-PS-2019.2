@@ -2,7 +2,7 @@ import React from 'react';
 import './error.css';
 import Header from '../header/header';
 
-export default function Error() {
+export default function Error404() {
     return (
         <section className='erro'>
             <div className='container'>

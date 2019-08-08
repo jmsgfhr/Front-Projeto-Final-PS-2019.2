@@ -1,6 +1,7 @@
 import React from 'react';
 import './login.css'
 import PanelLeft from '../panelLeft/panelLeft';
+import { Link } from 'react-router-dom';
 
 export default function Login(props) {
     return  (
@@ -13,7 +14,7 @@ export default function Login(props) {
                         <input className='loginName' placeholder='login'></input>
                         <input className='loginPassword' placeholder='senha'></input>
                     </div>
-                    <button className='loginSubmit' >ENTRAR</button>
+                    <Link to="/404" className='loginSubmit'>ENTRAR</Link>
                 </form>
             </div>
         </section>
