@@ -9,8 +9,10 @@ export default function Login(props) {
             <div className='loginContent'>
                 <h2 className='formTitle'>Área do treinamento</h2>
                 <form className='formLogin'>
-                    <input className='loginName' placeholder='login'></input>
-                    <input className='loginPassword' placeholder='senha'></input>
+                    <div className='inputDiv'>
+                        <input className='loginName' placeholder='login'></input>
+                        <input className='loginPassword' placeholder='senha'></input>
+                    </div>
                     <button className='loginSubmit' >ENTRAR</button>
                 </form>
             </div>
