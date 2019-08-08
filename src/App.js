@@ -3,6 +3,7 @@ import './reset.css';
 import './ui/ui.css';
 import './App.css';
 import Login from './component/login/login';
+import MenuLateral from './component/menuLateral/menuLateral';
 // import axios from 'axios';
 
 // const api = axios.create({
@@ -14,7 +15,8 @@ import Login from './component/login/login';
 function App(props) {
   return (
     <div className="App">
-      <Login></Login>
+      {/* <Login></Login> */}
+      <MenuLateral></MenuLateral>
     </div>
   );
 }

@@ -62,3 +62,7 @@
     text-decoration: none;
     line-height: 30px;
 }
+.recoverPassword{
+    color: var(--font-color-white);
+    margin-top: 10px;
+}

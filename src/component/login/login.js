@@ -16,6 +16,7 @@ export default function Login(props) {
                     </div>
                     <Link to="/404" className='loginSubmit'>ENTRAR</Link>
                 </form>
+                <Link to="/404" className='recoverPassword'>Recuperar Senha</Link>
             </div>
         </section>
     )

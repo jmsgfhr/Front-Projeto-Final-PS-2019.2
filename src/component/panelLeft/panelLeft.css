@@ -21,3 +21,8 @@
     font-size: 3em;
     font-family: var(--primary-font);
 }
+
+.inscription{
+    color: var(--font-color-white);
+    margin-top: 10px;
+}

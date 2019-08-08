@@ -35,16 +35,16 @@
 }
 
 .panel {
-    display: none;
+    display: flex;
     flex-direction: column;
     height: 0px;
-    transition: .5s;
+    overflow: hidden;
+    transition: .3s;
 }
 
 .display {
-    display: flex;
     height: 100px;
-    transition: .5s;
+    transition: .3s;
 }
 
 .accordionBtnChoices {
