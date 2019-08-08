@@ -2,7 +2,8 @@ import React from 'react';
 import './reset.css';
 import './ui/ui.css';
 import './App.css';
-import Forgot from './component/forgot/forgot';
+import MenuLateral from './component/menuLateral/menuLateral';
+
 // import axios from 'axios';
 
 // const api = axios.create({
@@ -14,7 +15,7 @@ import Forgot from './component/forgot/forgot';
 function App(props) {
   return (
     <div className="App">
-      <Forgot></Forgot>
+     <MenuLateral></MenuLateral>
     </div>
   );
 }

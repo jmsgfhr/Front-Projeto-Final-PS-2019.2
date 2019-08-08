@@ -25,7 +25,7 @@
     justify-content: space-between;
 }
 
-.accordionBtn::after{
+.accordionBtn::after {
     content: "+";
 }
 
@@ -35,8 +35,16 @@
 }
 
 .panel {
-    display: flex;
+    display: none;
     flex-direction: column;
+    height: 0px;
+    transition: .5s;
+}
+
+.display {
+    display: flex;
+    height: 100px;
+    transition: .5s;
 }
 
 .accordionBtnChoices {
@@ -44,6 +52,7 @@
     height: 50px;
     background-color: var(--secundary-black);
     transition: .3s;
+    color: var(--color-font-white);
 }
 
 .accordionBtnChoices:hover {
