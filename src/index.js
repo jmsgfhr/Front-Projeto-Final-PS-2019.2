@@ -7,6 +7,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Login from './component/login/login';
 import Forgot from './component/forgot/forgot';
 import Error404 from './component/error/error';
+import UserMenu from './ui/ui';
 
 ReactDOM.render(
     <BrowserRouter>
@@ -15,6 +16,7 @@ ReactDOM.render(
             <Route path="/login" component={Login} />
             <Route path="/forgot" component={Forgot} />
             <Route path="/404" component={Error404} />
+            <Route path="/usermenu" component={UserMenu} />
         </Switch>
     </ BrowserRouter>
     , document.getElementById('root'));
