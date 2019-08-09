@@ -15,63 +15,89 @@ const api = axios.create({
 
 export default class IndexInstrutor extends React.Component {
 
-    render (){
-        return(
-            <div className='indexInstrutorForm'>
-            <div className='searchBar'>
-                <h2 className='searchTitle'>Usuário</h2>
-                <input className='inputSearch' placeholder='Pesquisa'></input>
-            </div>
-            </div>
-        )
+  render (){
+      return(
+          <div className='indexInstrutorForm'>
+          <div className='searchBar'>
+              <h2 className='searchTitle'>Usuário</h2>
+              <input className='inputSearch' placeholder='Pesquisa' onKeyUp={() => this.searchFunction()}></input>
+          </div>
+          </div>
+      )
+  }
+  componentDidMount() {
+      api.get('/')
+      .then(function (response) {
+        // handle success
+          let table = document.querySelector('.indexInstrutorForm');
+          let tableUsers = document.createElement('table');
+          tableUsers.classList.add('tableUser');
+          let tableRow = document.createElement('tr');
+          let tableUserName = document.createElement('th');
+          tableUserName.innerText = 'Nome do Usuário';
+          let tableUserType = document.createElement('th');
+          tableUserType.innerText = 'Tipo de Usuario';
+          let tableUserStatus = document.createElement('th');
+          tableUserStatus.innerText = 'Status';
+          let tableUserEdit = document.createElement('th');
+          tableRow.appendChild(tableUserName);
+          tableRow.appendChild(tableUserType);
+          tableRow.appendChild(tableUserStatus);
+          tableRow.appendChild(tableUserEdit);
+          tableUsers.appendChild(tableRow);
+          table.appendChild(tableUsers);
+          for (let i = 0; i < response.data.length; i++) {
+              let tableRow = document.createElement('tr');
+              tableRow.classList.add('tableRowUser');
+              let tableUserName = document.createElement('td');
+              tableUserName.innerText = response.data[i].name;
+              tableUserName.classList.add('tdName');
+              let tableUserType = document.createElement('td');
+              tableUserType.innerText = response.data[i].kind;
+              let tableUserStatus = document.createElement('td');
+              let tableUserEdit = document.createElement('td');
+              ReactDOM.render(<BrowserRouter><Link to="/404" target={UserMenu} className='editBtn'>EDITAR</Link></BrowserRouter>, tableUserEdit);
+              tableRow.appendChild(tableUserName);
+              tableRow.appendChild(tableUserType);
+              tableRow.appendChild(tableUserStatus);
+              tableRow.appendChild(tableUserEdit);
+              tableUsers.append(tableRow);      
+          }
+          
+          
+          
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+      .finally(function () {
+        // always executed
+      });
+  }
+  searchFunction = () => {
+    
+    var input, filter, list, tableSearch, a, i, txtValue;
+
+    input = document.querySelector('.searchBar .inputSearch');
+
+    filter = input.value.toUpperCase();
+
+    list = document.querySelector(".indexInstrutorForm");
+
+    tableSearch = document.querySelectorAll('.tableRowUser');
+    console.log(tableSearch);
+    
+
+    for (i = 0; i < tableSearch.length; i++) {
+        a = tableSearch[i].querySelector(".tdName");
+        txtValue = a.innerText;
+        
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tableSearch[i].style.display = "";
+        } else {
+            tableSearch[i].style.display = "none";
+        }
     }
-    componentDidMount() {
-        api.get('/')
-        .then(function (response) {
-          // handle success
-            let table = document.querySelector('.indexInstrutorForm');
-            let tableUsers = document.createElement('table');
-            tableUsers.classList.add('tableUser');
-            let tableRow = document.createElement('tr');
-            let tableUserName = document.createElement('th');
-            tableUserName.innerText = 'Nome do Usuário';
-            let tableUserType = document.createElement('th');
-            tableUserType.innerText = 'Tipo de Usuario';
-            let tableUserStatus = document.createElement('th');
-            tableUserStatus.innerText = 'Status';
-            let tableUserEdit = document.createElement('th');
-            tableRow.appendChild(tableUserName);
-            tableRow.appendChild(tableUserType);
-            tableRow.appendChild(tableUserStatus);
-            tableRow.appendChild(tableUserEdit);
-            tableUsers.appendChild(tableRow);
-            table.appendChild(tableUsers);
-            for (let i = 0; i < response.data.length; i++) {
-                console.log(response.data[i]);
-                let tableRow = document.createElement('tr');
-                let tableUserName = document.createElement('td');
-                tableUserName.innerText = response.data[i].name;
-                let tableUserType = document.createElement('td');
-                tableUserType.innerText = response.data[i].kind;
-                let tableUserStatus = document.createElement('td');
-                let tableUserEdit = document.createElement('td');
-                ReactDOM.render(<BrowserRouter><Link to="/404" target={UserMenu} className='editBtn'>EDITAR</Link></BrowserRouter>, tableUserEdit);
-                tableRow.appendChild(tableUserName);
-                tableRow.appendChild(tableUserType);
-                tableRow.appendChild(tableUserStatus);
-                tableRow.appendChild(tableUserEdit);
-                tableUsers.append(tableRow);      
-            }
-            
-            
-            
-        })
-        .catch(function (error) {
-          // handle error
-          console.log(error);
-        })
-        .finally(function () {
-          // always executed
-        });
-    }
+  }
 }
