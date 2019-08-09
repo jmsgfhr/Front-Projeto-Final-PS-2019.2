@@ -9,8 +9,10 @@ export default class UserMenu extends React.Component {
         return (
             <div>
                 <Header></Header>
-                <MenuLateral></MenuLateral>
-                <IndexInstrutor></IndexInstrutor>
+                <div className='uiContent'>
+                    <MenuLateral></MenuLateral>
+                    <IndexInstrutor></IndexInstrutor>
+                </div>
             </div>
         )
     }
