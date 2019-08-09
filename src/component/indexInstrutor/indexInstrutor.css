@@ -71,3 +71,12 @@ link{
     width: 50px;
     height: 50px;
 }
+.editBtn{
+    text-decoration: none;
+    color: var(--primary-white);
+    background-color: var(--primary-yellow);
+    font-family: var(--primary-font);
+    font-weight: bolder;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
