@@ -9,7 +9,12 @@
     --primary-yellow: #E4C870;
     --primary-white: #fafafa;
     --secundary-white: #EFEFEF;
+    --terciary-white: #F8F8F8;
     --primary-font: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: var(--secundary-white);
 }
 
 .container {
@@ -17,7 +22,8 @@
     height: 100%;
     margin: 0 auto;
 }
-.uiContent{
+
+.uiContent {
     width: 100%;
     height: 100vh;
     display: flex;

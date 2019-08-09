@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './indexInstrutor.css';
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 
 const api = axios.create({
@@ -15,10 +17,9 @@ export default class IndexInstrutor extends React.Component {
         return(
             <div className='indexInstrutorForm'>
             <div className='searchBar'>
-                <h2 className='searchLabel'>Usuário</h2>
-                <input className='inputSearch' ></input>
+                <h2 className='searchTitle'>Usuário</h2>
+                <input className='inputSearch' placeholder='Pesquisa'></input>
             </div>
-                
             </div>
         )
     }
@@ -53,6 +54,11 @@ export default class IndexInstrutor extends React.Component {
                 let tableUserStatus = document.createElement('td');
                 let tableUserEdit = document.createElement('td');
                 //tableUserStatus.innerText = response.data[i].participations[0].situation;
+                // let tableBtn = document.createElement('Link');
+                // tableBtn.innerText = "EDITAR";
+                // tableBtn.setAttribute('to', '/');
+                // tableUserEdit.appendChild(tableBtn);
+                ReactDOM.render(<BrowserRouter><Link to="/404" className='editBtn'>EDITAR</Link></BrowserRouter>, tableUserEdit);
                 tableRow.appendChild(tableUserName);
                 tableRow.appendChild(tableUserType);
                 tableRow.appendChild(tableUserStatus);
