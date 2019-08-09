@@ -1,4 +1,45 @@
-.indexIntrutor{
+.indexInstrutorForm {
     width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: var(--primary-font);
+}
+
+.tableUser {
+    border-collapse: collapse;
+    margin-top: 50px;
+    width: 70%;
+    background-color: var(--secundary-white);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px var(--secundary-grey);
+}
+
+.tableUser tr {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.tableUser tr:hover{
+    background-color: var(--terciary-grey);
+}
+
+.tableUser th{
+    font-size: 1em;
+}
+
+.tableUser td{
+    font-size: .70em;
+}
+
+.tableUser tr td,
+.tableUser tr th {
+    line-height: 50px;
+    width: 25%;
     height: 100%;
 }
