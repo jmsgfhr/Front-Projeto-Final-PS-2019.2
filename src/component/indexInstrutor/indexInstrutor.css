@@ -67,11 +67,13 @@
     width: 25%;
     height: 100%;
 }
-link{
+
+link {
     width: 50px;
     height: 50px;
 }
-.editBtn{
+
+.editBtn {
     text-decoration: none;
     color: var(--primary-white);
     background-color: var(--primary-yellow);
@@ -79,4 +81,28 @@ link{
     font-weight: bolder;
     padding: 5px 10px;
     border-radius: 5px;
+}
+
+.spanStatus {
+    text-decoration: none;
+    color: var(--primary-white);
+    font-family: var(--primary-font);
+    font-weight: bolder;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.orange{
+    background-color: var(--primary-orange);
+}
+.red{
+    background-color: var(--primary-red);
+}
+.purple{
+    background-color: var(--primary-purple);
+}
+.green{
+    background-color: var(--primary-green);
+}
+.blue{
+    background-color: var(--terciary-blue);
 }

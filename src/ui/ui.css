@@ -1,6 +1,7 @@
 :root {
     --primary-blue: #285670;
     --secundary-blue: #2F6D89;
+    --terciary-blue: #40AAD8;
     --primary-black: #333333;
     --secundary-black: #474747;
     --primary-grey: #5E6061;
@@ -11,6 +12,10 @@
     --secundary-white: #EFEFEF;
     --terciary-white: #F8F8F8;
     --primary-font: 'Nunito', sans-serif;
+    --primary-green: #6CAD44;
+    --primary-red: #D94040;
+    --primary-purple: #A058CC;
+    --primary-orange: #E28A38;
 }
 
 body {
