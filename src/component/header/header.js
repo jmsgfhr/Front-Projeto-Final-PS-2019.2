@@ -17,10 +17,10 @@ export default function Header() {
                                 <a href='#'>Link 4</a>
                             </div>
                     </div> */}
-                    <div class="dropdown">
+                    <div className="dropdown">
                         {/* <img className='dropbtn' src={require('../../assets/img/icon-settings.svg')} alt='settings'></img> */}
-                        <button class="dropbtn"></button>
-                        <div class="dropdown-content">
+                        <button className="dropbtn"></button>
+                        <div className="dropdown-content">
                             <Link to='/' href="#">Configurações</Link>
                             <Link to='/' href="#">Log do Sistema</Link>
                             <Link to='/' href="#">Log da Conta</Link>
