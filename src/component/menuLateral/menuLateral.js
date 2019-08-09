@@ -11,7 +11,7 @@ export default class MenuLateral extends React.Component {
             }
             if(idButton === '2'){
                 let panel = document.querySelector('#panelTwo');
-                panel.classList.toggle('display');
+                panel.classList.toggle('displayPanelTwo');
             }
         }
 

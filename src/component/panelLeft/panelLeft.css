@@ -2,7 +2,7 @@
     width: 50%;
     height: 100vh;
     background-color: var(--primary-black);
-    color: var(--font-color-white);
+    color: var(--secundary-white);
 }
 
 .panelLeftContent {
@@ -23,6 +23,6 @@
 }
 
 .inscription{
-    color: var(--font-color-white);
+    color: var(--secundary-white);
     margin-top: 10px;
 }

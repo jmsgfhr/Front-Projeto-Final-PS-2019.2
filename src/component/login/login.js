@@ -1,5 +1,6 @@
 import React from 'react';
-import './login.css'
+import '../../ui/ui.css';
+import './login.css';
 import PanelLeft from '../panelLeft/panelLeft';
 import { Link } from 'react-router-dom';
 
@@ -14,9 +15,9 @@ export default function Login(props) {
                         <input className='loginName' placeholder='login'></input>
                         <input className='loginPassword' placeholder='senha'></input>
                     </div>
-                    <Link to="/404" className='loginSubmit'>ENTRAR</Link>
+                    <Link to="/usermenu" className='loginSubmit'>ENTRAR</Link>
                 </form>
-                <Link to="/404" className='recoverPassword'>Recuperar Senha</Link>
+                <Link to="/forgot" className='recoverPassword'>Recuperar Senha</Link>
             </div>
         </section>
     )

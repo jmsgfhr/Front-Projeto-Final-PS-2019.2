@@ -17,7 +17,7 @@
 }
 
 .formTitle {
-    color: var(--font-color-white);
+    color: var(--secundary-white);
     font-size: 2em;
 }
 
@@ -56,13 +56,13 @@
     height: 30px;
     width: 100%;
     background-color: var(--primary-yellow);
-    color: var(--font-color-white);
+    color: var(--secundary-white);
     border-radius: 5px;
     font-weight: bolder;
     text-decoration: none;
     line-height: 30px;
 }
 .recoverPassword{
-    color: var(--font-color-white);
+    color: var(--secundary-white);
     margin-top: 10px;
 }

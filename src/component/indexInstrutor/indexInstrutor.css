@@ -52,10 +52,12 @@
 
 .tableUser th {
     font-size: 1em;
+    text-align: center;
 }
 
 .tableUser td {
     font-size: .70em;
+    text-align: center;
 }
 
 .tableUser tr td,

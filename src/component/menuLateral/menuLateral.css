@@ -47,6 +47,10 @@
     height: 100px;
     transition: .3s;
 }
+.displayPanelTwo{
+    height: 130px;
+    transition: .3s;
+}
 
 .accordionBtnChoices {
     width: 100%;

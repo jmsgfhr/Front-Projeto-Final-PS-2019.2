@@ -11,8 +11,7 @@ import UserMenu from './ui/ui';
 function App(props) {
   return (
     <div className="App">
-      {/* <Login></Login> */}
-      <UserMenu></UserMenu>
+      <Login></Login>
     </div>
   );
 }

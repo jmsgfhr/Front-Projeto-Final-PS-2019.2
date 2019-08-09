@@ -4,6 +4,8 @@ import axios from 'axios';
 import './indexInstrutor.css';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import App from '../../App';
+import UserMenu from '../../ui/ui';
 
 
 const api = axios.create({
@@ -53,12 +55,7 @@ export default class IndexInstrutor extends React.Component {
                 tableUserType.innerText = response.data[i].kind;
                 let tableUserStatus = document.createElement('td');
                 let tableUserEdit = document.createElement('td');
-                //tableUserStatus.innerText = response.data[i].participations[0].situation;
-                // let tableBtn = document.createElement('Link');
-                // tableBtn.innerText = "EDITAR";
-                // tableBtn.setAttribute('to', '/');
-                // tableUserEdit.appendChild(tableBtn);
-                ReactDOM.render(<BrowserRouter><Link to="/404" className='editBtn'>EDITAR</Link></BrowserRouter>, tableUserEdit);
+                ReactDOM.render(<BrowserRouter><Link to="/404" target={UserMenu} className='editBtn'>EDITAR</Link></BrowserRouter>, tableUserEdit);
                 tableRow.appendChild(tableUserName);
                 tableRow.appendChild(tableUserType);
                 tableRow.appendChild(tableUserStatus);
