@@ -1,7 +1,15 @@
 .erro {
     width: 100%;
     height: 100vh;
-    background-color: var(--primary-blue);
+    background-color: var(--quaternary-blue);
+}
+
+.erro .container{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--primary-blue);
 }
 
 .error .header {
@@ -10,7 +18,6 @@
 
 .erroContent {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,6 +27,7 @@
 .errorNumber {
     font-family: var(--primary-font);
     font-size: 3em;
+    font-weight: bold;
     color: var(--font-color-white);
 }
 

@@ -8,7 +8,7 @@ import UserMenu from '../../ui/ui';
 import api from '../../api';
 
 
-export default class IndexInstrutor extends React.Component {
+export default class IndexCollaborator extends React.Component {
 
   state = {users: []};
 
@@ -24,7 +24,6 @@ export default class IndexInstrutor extends React.Component {
         <tr className='tableRowUser'>
           <td className='tdName'>{user.name}</td>
           <td>{user.kind}</td>
-          <td><span className='spanStatus red'>{user.kind}</span></td>
           <td><Link to='/404' className='editBtn'>editar</Link></td>
         </tr>
       )
@@ -42,7 +41,6 @@ export default class IndexInstrutor extends React.Component {
                 <tr>
                   <th>Nome</th>
                   <th>Tipo</th>
-                  <th>Status</th>
                   <th></th>
                 </tr>
               </thead>
@@ -55,7 +53,7 @@ export default class IndexInstrutor extends React.Component {
 }
 
   searchFunction = () => {
-    var input, filter, list, tableSearch, a, i, txtValue;
+    let input, filter, list, tableSearch, a, i, txtValue;
     input = document.querySelector('.searchBar .inputSearch');
     filter = input.value.toUpperCase();
     list = document.querySelector(".indexInstrutorForm");

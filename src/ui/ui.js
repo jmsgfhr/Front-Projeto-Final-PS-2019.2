@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../component/header/header';
 import MenuLateral from '../component/menuLateral/menuLateral';
-import IndexInstrutor from '../component/indexInstrutor/indexInstrutor';
+import IndexInstrutor from '../component/indexUsers/indexInstrutor';
+import IndexCandidate from '../component/indexUsers/indexCandidates';
+import IndexCollaborator from '../component/indexUsers/indexCollaborator';
 
 export default class UserMenu extends React.Component {
     render() {
@@ -11,7 +13,7 @@ export default class UserMenu extends React.Component {
                 <Header></Header>
                 <div className='uiContent'>
                     <MenuLateral></MenuLateral>
-                    <IndexInstrutor></IndexInstrutor>
+                    <IndexCollaborator></IndexCollaborator>
                 </div>
             </div>
         )
