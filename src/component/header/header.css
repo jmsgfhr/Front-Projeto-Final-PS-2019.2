@@ -39,7 +39,7 @@
     display: none;
     position: absolute;
     min-width: 160px;
-    transform: translate(-110px,-2px);
+    transform: translate(-110px,-5px);
     z-index: 1;
 }
 
