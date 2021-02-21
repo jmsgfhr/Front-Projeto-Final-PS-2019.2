@@ -1,21 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Header from '../component/header/header';
 import MenuLateral from '../component/menuLateral/menuLateral';
-import IndexInstrutor from '../component/indexUsers/indexInstrutor';
-import IndexCandidate from '../component/indexUsers/indexCandidates';
+// eslint-disable-next-line import/no-named-as-default
 import IndexCollaborator from '../component/indexUsers/indexCollaborator';
 
+// eslint-disable-next-line react/prefer-stateless-function
 export default class UserMenu extends React.Component {
-    render() {
-        return (
-            <div>
-                <Header></Header>
-                <div className='uiContent'>
-                    <MenuLateral></MenuLateral>
-                    <IndexCollaborator></IndexCollaborator>
-                </div>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <Header />
+        <div className="uiContent">
+          <MenuLateral />
+          <IndexCollaborator />
+        </div>
+      </div>
+    );
+  }
 }
