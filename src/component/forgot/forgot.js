@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../ui/ui.css';
 import './forgot.css';
 import PanelLeft from '../panelLeft/panelLeft';
 
