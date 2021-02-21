@@ -91,70 +91,18 @@ link {
     border-radius: 5px;
     padding: 5px 10px;
 }
-
-.orange {
+.orange{
     background-color: var(--primary-orange);
 }
-
-.red {
+.red{
     background-color: var(--primary-red);
 }
-
-.purple {
+.purple{
     background-color: var(--primary-purple);
 }
-
-.green {
+.green{
     background-color: var(--primary-green);
 }
-
-.blue {
+.blue{
     background-color: var(--terciary-blue);
-}
-
-@media (max-width: 1199.98px) {}
-
-@media (max-width: 991.98px) {
-    .searchBar {
-        flex-direction: row;
-    }
-
-    .tableUser tr td {
-        font-size: .8em;
-    }
-
-    .header .container {
-        width: 100%;
-    }
-}
-
-
-
-@media (max-width: 767.98px) {
-    .searchBar {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .tableUser tr td {
-        font-size: .6em;
-    }
-
-    .header .container {
-        width: 100%;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .searchBar {
-        flex-direction: column;
-    }
-
-    .tableUser tr td {
-        font-size: .5em;
-    }
-
-    .header .container {
-        width: 100%;
-    }
 }
