@@ -8,7 +8,6 @@ import Login from './component/login/login';
 import Forgot from './component/forgot/forgot';
 import Error404 from './component/error/error';
 import UserMenu from './ui/ui';
-import Subscribe from './component/subscribe/subscribe';
 
 ReactDOM.render(
     <BrowserRouter>
@@ -18,7 +17,6 @@ ReactDOM.render(
             <Route path="/forgot" component={Forgot} />
             <Route path="/404" component={Error404} />
             <Route path="/usermenu" component={UserMenu} />
-            <Route path="/subscribe" component={Subscribe} />
         </Switch>
     </ BrowserRouter>
     , document.getElementById('root'));

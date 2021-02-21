@@ -14,7 +14,7 @@ export default function Login(props) {
                 <form className='formLogin'>
                     <div className='inputDiv'>
                         <input className='loginName' placeholder='login'></input>
-                        <input className='loginPassword' type='password' placeholder='senha'></input>
+                        <input className='loginPassword' placeholder='senha'></input>
                     </div>
                     <Link to='/usermenu' className='loginSubmit' onClick={()=> Handleclick()}>ENTRAR</Link>
                 </form>
@@ -30,7 +30,7 @@ function Handleclick() {
         password: "abcdef"
       })
       .then(function (response) {
-        console.log(response.data.token);
+        console.log(response);
       })
       .catch(function (error) {
         console.log(error);
