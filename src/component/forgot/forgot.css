@@ -41,9 +41,3 @@
     border-radius: 5px;
     font-weight: bolder;
 }
-
-@media (max-width: 767.98px) {
-    .formForgot{
-        width: 80%;
-    }
-}

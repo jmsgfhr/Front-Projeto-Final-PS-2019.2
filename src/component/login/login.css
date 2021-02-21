@@ -29,7 +29,7 @@
     justify-content: space-between
 }
 
-.inputDiv {
+.inputDiv{
     margin-top: 20px;
     height: 80px;
     width: 100%;
@@ -47,9 +47,9 @@
 
 .loginPassword {
     height: 30px;
-    width: 100%;
     background-color: var(--primary-white);
     border-radius: 5px;
+    width: 100%;
 }
 
 .loginSubmit {
@@ -62,14 +62,7 @@
     text-decoration: none;
     line-height: 30px;
 }
-
-.recoverPassword {
+.recoverPassword{
     color: var(--secundary-white);
     margin-top: 10px;
-}
-
-@media (max-width: 767.98px) {
-    .formLogin{
-        width: 80%;
-    }
 }
