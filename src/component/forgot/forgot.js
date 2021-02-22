@@ -3,7 +3,7 @@ import './forgot.css';
 import PanelLeft from '../panelLeft/panelLeft';
 
 export default function Forgot(props) {
-    return  (
+    return (
         <section className='forgot'>
             <PanelLeft></PanelLeft>
             <div className='forgotContent'>

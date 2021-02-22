@@ -5,7 +5,7 @@ import PanelLeft from '../panelLeft/panelLeft';
 import { Link } from 'react-router-dom';
 
 export default function Login(props) {
-    return  (
+    return (
         <section className='login'>
             <PanelLeft></PanelLeft>
             <div className='loginContent'>
